@@ -2,13 +2,10 @@
 
 #ifdef ARENA_EXCEPTIONS
 #include <fmt/format.h>
-#endif
-
-#include <cstdint>
+#else
 #include <cstring>
-#include <cstdlib>
 #include <memory>
-#include <iostream>
+#endif
 
 template<size_t Capacity>
 class Arena {
